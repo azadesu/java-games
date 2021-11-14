@@ -221,7 +221,3 @@ public class SkiGame extends JFrame implements ActionListener, KeyListener {
     }
 }
 
-//gameInputDemo
-//change width height of rectangles x3
-// add gameRenderer
-//explain main class
