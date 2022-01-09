@@ -69,7 +69,6 @@ public class SkiGame extends JFrame implements ActionListener, KeyListener {
             g.setColor(Color.red);
             g.drawString("Game Over!", 300, HEIGHT / 2);
             g.drawString("Press SPACE to restart!", 100, HEIGHT / 2 + 50);
-
         }
     }
 
@@ -92,7 +91,7 @@ public class SkiGame extends JFrame implements ActionListener, KeyListener {
             ImageObject new_obstacle = Obstacles.getRandomObstacle();
             // and set the new x and y values
             new_obstacle.x = nextX;
-            new_obstacle.y = -1 * (100 + new Random().nextInt(300));
+            new_obstacle.y =  -1* (100 + new Random().nextInt(300));
 
             // checks if there's enough space for the player to pass through between two obstacles
             // if there is enough space, nothing = true.

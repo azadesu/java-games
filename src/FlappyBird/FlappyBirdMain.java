@@ -133,7 +133,7 @@ public class FlappyBirdMain extends JFrame implements ActionListener, KeyListene
             for (int i = 0; i < columns.size(); i++) {
                 Rectangle column = columns.get(i);
                 //remove the column once the columns exit the window
-                if (column.x < 0) {
+                if (column.x + column.width < 0) { // correct in P1
                     columns.remove(column);
                     // makes sure the method is called onnly once
                     if (column.y == 0) {
